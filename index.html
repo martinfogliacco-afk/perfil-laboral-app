@@ -2093,7 +2093,7 @@ function enviarAlBackend(puntajes, top5, perfilNombre) {
 
   fetch(WEB_APP_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'text/plain' },
     body: JSON.stringify(payload),
     mode: 'no-cors'  // necesario para GAS Web App sin CORS configurado
   }).catch(err => console.warn('No se pudo registrar en el backend:', err));
